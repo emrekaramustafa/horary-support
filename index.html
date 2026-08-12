@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Horary: Ask Astro — Support</title>
+<meta name="description" content="Support, frequently asked questions and contact details for Horary: Ask Astro.">
+<style>
+  :root {
+    --bg: #fbf9f4;
+    --ink: #1c1a17;
+    --muted: #5c574e;
+    --rule: #e2dcd0;
+    --link: #6a4a1f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14130f;
+      --ink: #ece7dc;
+      --muted: #a09889;
+      --rule: #302c25;
+      --link: #d5b483;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 ui-serif, Georgia, "Times New Roman", serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 40rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .35rem; }
+  .sub { color: var(--muted); margin: 0 0 2.5rem; font-size: 1rem; }
+  h2 {
+    font-size: .8rem; letter-spacing: .1em; text-transform: uppercase;
+    font-family: ui-sans-serif, system-ui, sans-serif; color: var(--muted);
+    margin: 2.75rem 0 .75rem; padding-bottom: .4rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  h3 { font-size: 1.05rem; margin: 1.75rem 0 .35rem; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  ol { padding-left: 1.35rem; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .9em; background: var(--rule); padding: .1em .35em; border-radius: 3px;
+  }
+  .contact { margin: .5rem 0 0; font-size: 1.1rem; }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .9rem;
+  }
+  footer a { margin-right: 1.25rem; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Horary: Ask Astro</h1>
+  <p class="sub">Support and frequently asked questions.</p>
+
+  <h2>What the app does</h2>
+  <p>Horary is the branch of astrology that answers a question rather than describing a
+  person. You ask one thing; the app casts a chart for the exact second you asked it and a
+  rule engine judges that question from that chart. Every testimony is shown together with
+  the classical rule it came from, so the reasoning can be followed rather than taken on
+  trust.</p>
+  <p>Planetary positions are computed from NASA JPL ephemeris data. The app is available in
+  English, Turkish, German, Spanish and French, including the reading itself.</p>
+
+  <h2>Frequently asked questions</h2>
+
+  <h3>Why did the app refuse to answer my question?</h3>
+  <p>Some questions are declined on purpose: illness or diagnosis, death, pregnancy or
+  fertility, the outcome of a court case, whether an investment will rise, and another named
+  person's private life. A chart is not evidence about any of them, and a confident wrong
+  answer there does real harm. A declined question is never charged for, and the app suggests
+  a question it can answer instead.</p>
+
+  <h3>What does “no judgement” mean?</h3>
+  <p>Sometimes the figure carries a stricture — the classical rules saying that this
+  particular chart cannot be read. The app tells you so plainly instead of inventing an
+  answer, and the question is not spent.</p>
+
+  <h3>How do I cancel a subscription?</h3>
+  <p>On your iPhone: <strong>Settings → your name → Subscriptions → Horary → Cancel
+  Subscription</strong>. Cancelling stops future renewals; the period you have already paid
+  for runs to its end. Subscriptions are billed by Apple, so cancellation and refunds are
+  handled there rather than by us.</p>
+
+  <h3>How do I restore a purchase?</h3>
+  <p>Open the menu, then <em>Seals and layers</em>, then <em>Restore purchases</em>.</p>
+
+  <h3>How do I delete my data?</h3>
+  <p>Menu, then <em>Delete my data</em>. That removes your questions, your readings, your
+  birth details and anything queued for you. There is no account to close, because there was
+  never an account to open.</p>
+
+  <h3>I changed phone and my readings are gone.</h3>
+  <p>The app has no login. A random identifier kept in the iOS Keychain owns your readings
+  and your paid balance. Restoring the new phone from a backup brings it across. Without a
+  restore we cannot recover it, because there is nothing else on our side that identifies
+  you.</p>
+
+  <h3>Is a reading advice?</h3>
+  <p>No. Horary: Ask Astro is offered for entertainment and self-reflection. A reading is not
+  a guarantee and is not a substitute for professional medical, legal, financial or
+  psychological advice. The decision is always yours, and the app says so on every reading it
+  gives.</p>
+
+  <h3>Something is wrong, or a reading looks incorrect.</h3>
+  <p>Write to the address below and include the date and time of the reading and the language
+  you were reading in. Every reading stores the chart it was judged from, so a specific figure
+  can be looked at.</p>
+
+  <h2>Contact</h2>
+  <p class="contact">Mehmet Emre Karamustafa<br>
+  <a href="mailto:mehmetemrekaramustafa@gmail.com">mehmetemrekaramustafa@gmail.com</a></p>
+  <p style="color:var(--muted);font-size:.95rem">Email is the only support channel. Replies
+  usually take a couple of days.</p>
+
+  <footer>
+    <a href="https://api.YOURHOST/legal/privacy.html">Privacy Policy</a>
+    <a href="https://api.YOURHOST/legal/terms.html">Terms of Use</a>
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a>
+  </footer>
+
+</main>
+</body>
+</html>
