@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Horary: Ask Astro</title>
+<meta name="description" content="Politique de confidentialité for Horary: Ask Astro.">
+<style>
+  :root {
+    --bg: #fbf9f4; --ink: #1c1a17; --muted: #5c574e;
+    --rule: #e2dcd0; --link: #6a4a1f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14130f; --ink: #ece7dc; --muted: #a09889;
+      --rule: #302c25; --link: #d5b483;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.65 ui-serif, Georgia, "Times New Roman", serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 40rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .35rem; }
+  .sub { color: var(--muted); margin: 0 0 2.5rem; font-size: 1rem; }
+  h2 {
+    font-size: .8rem; letter-spacing: .1em; text-transform: uppercase;
+    font-family: ui-sans-serif, system-ui, sans-serif; color: var(--muted);
+    margin: 2.75rem 0 .75rem; padding-bottom: .4rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  h3 { font-size: 1.05rem; margin: 1.75rem 0 .35rem; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  ul, ol { padding-left: 1.35rem; }
+  li { margin: 0 0 .4rem; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .9em; background: var(--rule); padding: .1em .35em; border-radius: 3px;
+  }
+  .langs { margin: 0 0 2rem; font-size: .95rem; }
+  .langs a { margin-right: .9rem; }
+  .contact { margin: .5rem 0 0; font-size: 1.1rem; }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .9rem;
+  }
+  footer a { margin-right: 1.25rem; }
+</style>
+</head>
+<body>
+<main>
+<p class="langs"><a href="../en/privacy.html">English</a> <a href="../tr/privacy.html">Türkçe</a> <a href="../de/privacy.html">Deutsch</a> <a href="../es/privacy.html">Español</a> <strong>Français</strong></p>
+<h1>Politique de confidentialité</h1>
+<p>Dernière mise à jour : 7 août 2026.</p>
+<p>Horary dresse un thème horaire traditionnel pour l'instant où vous posez une question. Ce texte dit ce que l'application conserve réellement, où cela va et comment le faire disparaître. Il décrit cette application, pas une catégorie d'applications.</p>
+<h2>En bref</h2>
+<ul>
+<li>Votre première question ne demande ni compte, ni adresse e-mail, ni nom.</li>
+<li>Il n'y a aucune publicité, aucun service d'analyse et aucun pistage d'aucune sorte.</li>
+<li>La seule chose dont l'application a toujours besoin est une localisation approximative : un thème sans lieu n'a pas de maisons, et les maisons sont la réponse.</li>
+<li>La question que vous écrivez est envoyée à un fournisseur de modèle de langage, pour qu'elle puisse vous être relue et racontée.</li>
+<li>Tout ce que nous conservons peut être supprimé depuis l'application, et cette suppression est réelle.</li>
+</ul>
+<h2>Qui vous êtes pour nous</h2>
+<p>Au premier lancement, l'application engendre un identifiant aléatoire et le range dans le trousseau iOS ou dans le stockage adossé au Keystore d'Android. Ce n'est pas l'identifiant de votre appareil, ce n'est pas un identifiant publicitaire, et il ne porte rien de votre téléphone : ni modèle, ni version du système.</p>
+<p>C'est le nom d'une ligne sur notre serveur, et cette ligne possède vos lectures et votre solde payé. Deux conséquences méritent d'être connues :</p>
+<ul>
+<li>Nous ne pouvons pas rattacher cette ligne à votre nom, puisque nous ne l'avons jamais demandé.</li>
+<li>Si l'identifiant est perdu — un nouveau téléphone sans restauration, un stockage effacé —, les lectures et le solde payé qui y étaient attachés ne peuvent pas être récupérés par nous, car rien d'autre ne prouve qu'ils étaient les vôtres.</li>
+</ul>
+<h2>Localisation</h2>
+<p>Un thème horaire se dresse pour un lieu autant que pour un instant. Les pointes de maisons découlent de la latitude et du temps sidéral local, et un thème dressé pour la mauvaise ville répond à une autre question.</p>
+<ul>
+<li>L'application demande au système une précision réduite, c'est-à-dire à l'échelle de la ville. Sur Android, seule la localisation approximative est déclarée. Une position précise n'est jamais demandée, car un mètre de précision ne changerait rien au thème.</li>
+<li>Les coordonnées pour lesquelles un thème a été dressé sont conservées avec la question. Elles doivent l'être : sans elles la figure ne peut pas être reproduite, et une lecture que l'on ne peut pas reproduire n'atteste de rien.</li>
+<li>Nous ne demandons jamais et ne conservons jamais d'adresse postale.</li>
+<li>Si vous refusez la localisation, vous pouvez toujours lire tout ce qui est déjà dans l'application. Vous ne pouvez pas dresser une nouvelle figure.</li>
+</ul>
+<h2>La question que vous écrivez</h2>
+<p>Votre question est conservée avec la lecture qu'elle a produite, pour que votre historique puisse vous la remontrer.</p>
+<p>Elle est aussi envoyée à un tiers. Il y a deux appels au modèle par question, et les deux reçoivent le texte que vous avez écrit :</p>
+<p>1. Vous la relire. Un modèle de langage reformule la question en question « cela arrivera-t-il ? », la sépare si elle porte sur deux affaires, et attribue la maison astrologique. C'est ce que l'écran de confirmation vous montre avant que quoi que ce soit soit jugé.</p>
+<p>2. Raconter le verdict. Une fois que notre propre moteur a jugé la figure, un modèle de langage rédige le verdict dans votre langue. Il reçoit le verdict et votre question, et rien d'autre du thème.</p>
+<p>Le fournisseur est Anthropic, PBC, qui traite le texte pour notre compte afin de renvoyer une réponse. Notre système est également bâti pour fonctionner avec les modèles d'OpenAI ; si nous changeons de fournisseur, ce texte est mis à jour d'abord. Ni l'un ni l'autre ne reçoit de nom, d'adresse e-mail ou de localisation.</p>
+<p>Le jugement lui-même n'est pas rendu par un modèle de langage. Il est calculé par un moteur de règles déterministe à partir du thème, et le récit est ensuite vérifié contre le verdict : une phrase nommant une planète ou un degré absent de la figure est rejetée, et la lecture est servie sans prose plutôt qu'avec de l'astrologie inventée.</p>
+<h2>Données de naissance, si vous les donnez</h2>
+<p>Votre nom, votre date, votre heure et votre lieu de naissance sont facultatifs partout dans l'application. Ils déverrouillent les couches numérologie et natale, et ne touchent jamais un verdict horaire : celui-ci vient du thème dressé à l'instant où vous avez posé la question.</p>
+<ul>
+<li>Les lieux de naissance sont cherchés sur notre propre serveur, dans un fichier qui l'accompagne. Le lieu que vous tapez n'est transmis à aucune société de cartographie ou de géocodage.</li>
+<li>Chaque champ peut être retiré seul, ou tous d'un coup, ce qui écarte aussi les nombres calculés à partir d'eux.</li>
+</ul>
+<h2>Ce qui est conservé par ailleurs</h2>
+<ul>
+<li>Les lectures : le verdict, le thème dont il a été calculé, les témoignages et le récit.</li>
+<li>Les issues que vous enregistrez — ce que le thème a dit s'est-il produit — et toute note que vous y joignez.</li>
+<li>Les signalements que vous déposez sur une lecture fausse ou blessante, avec leur note.</li>
+<li>Votre solde de sceaux et l'état de votre abonnement.</li>
+<li>Votre langue, pour qu'une lecture conservée se rouvre dans la langue où vous lisez aujourd'hui.</li>
+</ul>
+<p>Si vous activez les notifications, le serveur les planifie à l'avance et garde trace de ce qu'il a envoyé, afin de ne pas dire deux fois la même chose. Les notifications sont éteintes tant que vous ne les allumez pas.</p>
+<h2>Combien de temps</h2>
+<p>Jusqu'à ce que vous le supprimiez. Il n'y a aucune tâche d'expiration et rien n'est archivé ailleurs : une lecture demandée il y a deux ans est toujours là, parce que vous voudrez peut-être la rouvrir.</p>
+<h2>Tout supprimer</h2>
+<p>Menu, puis « Supprimer mes données ». Cela supprime vos questions, vos lectures, les issues que vous avez enregistrées, vos données de naissance, tout ce qui est en attente de vous être envoyé, et la ligne qui possède le tout.</p>
+<p>Cela supprime aussi votre solde payé, et les sceaux que vous avez achetés sont perdus. L'application le dit sur l'écran de confirmation, car une suppression qui garde discrètement la partie payante d'un compte n'est pas une suppression.</p>
+<p>Le serveur répond avec le décompte de ce qu'il a retiré plutôt qu'avec un accusé de réception, pour que la promesse puisse être vérifiée au lieu d'être crue.</p>
+<p>Les seules données de naissance peuvent être retirées sans supprimer le reste, depuis l'écran de profil.</p>
+<h2>Paiements</h2>
+<p>Les sceaux et les abonnements s'achètent par le système d'achat intégré de la plateforme, c'est-à-dire l'App Store ou Google Play. Le paiement est entièrement géré par la plateforme. Nous ne voyons ni ne conservons jamais de numéro de carte.</p>
+<p>Ce que nous conservons, c'est le résultat : combien de sceaux vous avez, si un abonnement est actif, et quand il se termine.</p>
+<h2>Ni vendu, ni partagé</h2>
+<p>Nous ne vendons pas ce que nous conservons et nous ne le partageons pas à des fins publicitaires. Le seul tiers qui reçoit du contenu que vous avez écrit est le fournisseur de modèle de langage nommé plus haut, et uniquement pour répondre à la question que vous avez posée.</p>
+<h2>Enfants</h2>
+<p>L'application ne s'adresse pas aux enfants, et nous ne collectons sciemment rien auprès d'un enfant de moins de 13 ans.</p>
+<h2>Vos droits</h2>
+<p>Où que vous viviez, vous pouvez voir ce que nous conservons — c'est l'écran d'historique — et vous pouvez le supprimer depuis l'application sans nous le demander. Si votre droit local vous accorde d'autres droits sur vos données, écrivez-nous à [[CONTACT_EMAIL]].</p>
+<h2>Contact</h2>
+<p>[[OPERATOR]] — [[CONTACT_EMAIL]]</p>
+<p>Les modifications de ce texte sont publiées ici, dans l'application, avec la date ci-dessus.</p>
+<footer>
+  <a href="../index.html">Support</a>
+  <a href="../en/privacy.html">Privacy Policy</a>
+  <a href="../en/terms.html">Terms of Use</a>
+</footer>
+</main>
+</body>
+</html>

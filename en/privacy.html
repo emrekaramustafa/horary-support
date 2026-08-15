@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Horary: Ask Astro</title>
+<meta name="description" content="Privacy Policy for Horary: Ask Astro.">
+<style>
+  :root {
+    --bg: #fbf9f4; --ink: #1c1a17; --muted: #5c574e;
+    --rule: #e2dcd0; --link: #6a4a1f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14130f; --ink: #ece7dc; --muted: #a09889;
+      --rule: #302c25; --link: #d5b483;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.65 ui-serif, Georgia, "Times New Roman", serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 40rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .35rem; }
+  .sub { color: var(--muted); margin: 0 0 2.5rem; font-size: 1rem; }
+  h2 {
+    font-size: .8rem; letter-spacing: .1em; text-transform: uppercase;
+    font-family: ui-sans-serif, system-ui, sans-serif; color: var(--muted);
+    margin: 2.75rem 0 .75rem; padding-bottom: .4rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  h3 { font-size: 1.05rem; margin: 1.75rem 0 .35rem; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  ul, ol { padding-left: 1.35rem; }
+  li { margin: 0 0 .4rem; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .9em; background: var(--rule); padding: .1em .35em; border-radius: 3px;
+  }
+  .langs { margin: 0 0 2rem; font-size: .95rem; }
+  .langs a { margin-right: .9rem; }
+  .contact { margin: .5rem 0 0; font-size: 1.1rem; }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .9rem;
+  }
+  footer a { margin-right: 1.25rem; }
+</style>
+</head>
+<body>
+<main>
+<p class="langs"><strong>English</strong> <a href="../tr/privacy.html">Türkçe</a> <a href="../de/privacy.html">Deutsch</a> <a href="../es/privacy.html">Español</a> <a href="../fr/privacy.html">Français</a></p>
+<h1>Privacy Policy</h1>
+<p>Last updated: 7 August 2026.</p>
+<p>Horary casts a traditional horary chart for the moment you ask a question. This document says what the app actually holds, where it goes, and how to make it stop existing. It describes this app, not a category of app.</p>
+<h2>The short version</h2>
+<ul>
+<li>Your first question needs no account, no email address and no name.</li>
+<li>There is no advertising, no analytics service and no tracking of any kind.</li>
+<li>The one thing the app always needs is a rough location, because a chart without a place has no houses, and the houses are the answer.</li>
+<li>The question you type is sent to a language-model provider, so it can be read back to you and narrated.</li>
+<li>Everything we hold can be deleted from inside the app, and the deletion is real.</li>
+</ul>
+<h2>Who you are to us</h2>
+<p>On first launch the app generates a random identifier and stores it in the iOS Keychain or the Android Keystore-backed store. It is not your device's identifier and not an advertising identifier, and it carries nothing about your phone: no model, no operating-system version.</p>
+<p>It is the name of a row on our server, and that row owns your readings and your paid balance. Two consequences are worth knowing:</p>
+<ul>
+<li>We cannot connect that row to you by name, because we never asked for one.</li>
+<li>If the identifier is lost — a new phone with no restore, storage cleared — the readings and the paid balance attached to it cannot be recovered by us, because there is nothing else that proves they were yours.</li>
+</ul>
+<h2>Location</h2>
+<p>A horary chart is cast for a place as well as for a moment. The house cusps come from the latitude and the local sidereal time, and a chart cast for the wrong city answers a different question.</p>
+<ul>
+<li>The app asks the operating system for reduced accuracy, which is city level. On Android it declares coarse location only. It never asks for a precise fix, because a metre of precision would change nothing in the chart.</li>
+<li>The coordinates a chart was cast for are stored with the question. They have to be: without them the figure cannot be reproduced, and a reading that cannot be reproduced is not a record of anything.</li>
+<li>We never ask for, and never store, a street address.</li>
+<li>If you refuse location you can still read everything already in the app. You cannot cast a new figure.</li>
+</ul>
+<h2>The question you write</h2>
+<p>Your question is stored with the reading it produced, so your history can show it back to you.</p>
+<p>It is also sent to a third party. There are two model calls per question, and both receive the text you wrote:</p>
+<p>1. Reading it back. A language model restates the question as a will-it-happen question, separates it if it asks about two matters, and assigns the astrological house. That is what the confirmation screen shows you before anything is judged.</p>
+<p>2. Narrating the verdict. After our own engine has judged the figure, a language model writes the verdict up in your language. It receives the verdict and your question and nothing else about the chart.</p>
+<p>The provider is Anthropic, PBC, which processes the text on our behalf in order to return an answer. Our system is also built to run on OpenAI's models; if we change provider, this document is updated first. Neither is given a name, an email address or your location.</p>
+<p>The judgement itself is not made by a language model. It is computed by a deterministic rule engine from the chart, and the narration is checked against the verdict afterwards: a sentence naming a planet or a degree that is not in the figure is rejected, and the reading is served without prose rather than with invented astrology.</p>
+<h2>Birth details, if you give them</h2>
+<p>Your name, birth date, birth time and birth place are optional everywhere in the app. They unlock the numerology and natal layers, and they never touch a horary verdict — that comes from the chart cast at the moment you asked.</p>
+<ul>
+<li>Birth places are looked up on our own server, from a file that ships with it. The place you type is not forwarded to a mapping or geocoding company.</li>
+<li>Each field can be removed on its own, or all of them at once, which also drops the numbers computed from them.</li>
+</ul>
+<h2>What else is stored</h2>
+<ul>
+<li>Readings: the verdict, the chart it was computed from, the testimonies, and the narration.</li>
+<li>Outcomes you record — whether what the chart said actually happened — and any note you attach.</li>
+<li>Reports you file about a reading that was wrong or harmful, with any note.</li>
+<li>Your seal balance and subscription state.</li>
+<li>Your language, so that a stored reading reopens in the language you read in today.</li>
+</ul>
+<p>If you turn notifications on, the server plans them in advance and keeps a record of what it sent, so it does not say the same thing twice. Notifications are off until you turn them on.</p>
+<h2>How long</h2>
+<p>Until you delete it. There is no expiry job and nothing is archived elsewhere: a reading you asked for two years ago is still there because you may want to reopen it.</p>
+<h2>Deleting everything</h2>
+<p>Menu, then Delete my data. It deletes your questions, your readings, the outcomes you recorded, your birth details, anything queued to be sent to you, and the row that owns them.</p>
+<p>It also deletes your paid balance, and any seals you have bought are forfeited. The app says so on the confirmation screen, because a deletion that quietly keeps the paying part of an account is not a deletion.</p>
+<p>The server answers with counts of what it removed rather than with an acknowledgement, so the promise can be checked rather than trusted.</p>
+<p>Birth details alone can be removed without deleting the rest, from the profile screen.</p>
+<h2>Payments</h2>
+<p>Seals and subscriptions are bought through the platform's own in-app purchase system, which is the App Store or Google Play. Payment is handled entirely by the platform. We never see or store a card number.</p>
+<p>What we store is the result: how many seals you have, whether a subscription is active, and when it expires.</p>
+<h2>Not sold, not shared</h2>
+<p>We do not sell what we hold and we do not share it for advertising. The only third party that receives content you wrote is the language-model provider named above, and only in order to answer the question you asked.</p>
+<h2>Children</h2>
+<p>The app is not directed at children, and we do not knowingly collect anything from a child under 13.</p>
+<h2>Your rights</h2>
+<p>Wherever you live, you can see what we hold — that is the history screen — and you can delete it from the app without asking us. If your local law grants you further rights over your data, write to us at [[CONTACT_EMAIL]].</p>
+<h2>Contact</h2>
+<p>[[OPERATOR]] — [[CONTACT_EMAIL]]</p>
+<p>Changes to this document are published here, in the app, with the date above.</p>
+<footer>
+  <a href="../index.html">Support</a>
+  <a href="../en/privacy.html">Privacy Policy</a>
+  <a href="../en/terms.html">Terms of Use</a>
+</footer>
+</main>
+</body>
+</html>

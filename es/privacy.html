@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Horary: Ask Astro</title>
+<meta name="description" content="Política de privacidad for Horary: Ask Astro.">
+<style>
+  :root {
+    --bg: #fbf9f4; --ink: #1c1a17; --muted: #5c574e;
+    --rule: #e2dcd0; --link: #6a4a1f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14130f; --ink: #ece7dc; --muted: #a09889;
+      --rule: #302c25; --link: #d5b483;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.65 ui-serif, Georgia, "Times New Roman", serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 40rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .35rem; }
+  .sub { color: var(--muted); margin: 0 0 2.5rem; font-size: 1rem; }
+  h2 {
+    font-size: .8rem; letter-spacing: .1em; text-transform: uppercase;
+    font-family: ui-sans-serif, system-ui, sans-serif; color: var(--muted);
+    margin: 2.75rem 0 .75rem; padding-bottom: .4rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  h3 { font-size: 1.05rem; margin: 1.75rem 0 .35rem; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  ul, ol { padding-left: 1.35rem; }
+  li { margin: 0 0 .4rem; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .9em; background: var(--rule); padding: .1em .35em; border-radius: 3px;
+  }
+  .langs { margin: 0 0 2rem; font-size: .95rem; }
+  .langs a { margin-right: .9rem; }
+  .contact { margin: .5rem 0 0; font-size: 1.1rem; }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .9rem;
+  }
+  footer a { margin-right: 1.25rem; }
+</style>
+</head>
+<body>
+<main>
+<p class="langs"><a href="../en/privacy.html">English</a> <a href="../tr/privacy.html">Türkçe</a> <a href="../de/privacy.html">Deutsch</a> <strong>Español</strong> <a href="../fr/privacy.html">Français</a></p>
+<h1>Política de Privacidad</h1>
+<p>Última actualización: 7 de agosto de 2026.</p>
+<p>Horary levanta una carta horaria tradicional para el momento en que haces una pregunta. Este texto dice qué guarda realmente la aplicación, adónde va y cómo hacer que deje de existir. Describe esta aplicación, no una categoría de aplicaciones.</p>
+<h2>En breve</h2>
+<ul>
+<li>Tu primera pregunta no necesita cuenta, ni correo electrónico, ni nombre.</li>
+<li>No hay publicidad, ni servicio de analítica, ni rastreo de ningún tipo.</li>
+<li>Lo único que la aplicación siempre necesita es una ubicación aproximada: una carta sin lugar no tiene casas, y las casas son la respuesta.</li>
+<li>La pregunta que escribes se envía a un proveedor de modelos de lenguaje para que pueda leerse de vuelta y narrarse.</li>
+<li>Todo lo que guardamos puede borrarse desde dentro de la aplicación, y ese borrado es real.</li>
+</ul>
+<h2>Quién eres para nosotros</h2>
+<p>En el primer arranque la aplicación genera un identificador aleatorio y lo guarda en el Llavero de iOS o en el almacén respaldado por Keystore de Android. No es el identificador de tu dispositivo ni un identificador publicitario, y no lleva nada sobre tu teléfono: ni modelo, ni versión del sistema operativo.</p>
+<p>Es el nombre de una fila en nuestro servidor, y esa fila posee tus lecturas y tu saldo pagado. Vale la pena conocer dos consecuencias:</p>
+<ul>
+<li>No podemos vincular esa fila con tu nombre, porque nunca lo pedimos.</li>
+<li>Si el identificador se pierde — un teléfono nuevo sin restauración, almacenamiento borrado —, las lecturas y el saldo pagado que colgaban de él no podemos recuperarlos, porque no existe nada más que demuestre que eran tuyos.</li>
+</ul>
+<h2>Ubicación</h2>
+<p>Una carta horaria se levanta para un lugar tanto como para un momento. Las cúspides de las casas salen de la latitud y del tiempo sidéreo local, y una carta levantada para la ciudad equivocada responde otra pregunta.</p>
+<ul>
+<li>La aplicación pide al sistema operativo una precisión reducida, es decir, a nivel de ciudad. En Android declara únicamente ubicación aproximada. Nunca pide una posición precisa, porque un metro de precisión no cambiaría nada en la carta.</li>
+<li>Las coordenadas para las que se levantó una carta se guardan junto con la pregunta. Tienen que guardarse: sin ellas la figura no puede reproducirse, y una lectura que no puede reproducirse no es constancia de nada.</li>
+<li>Nunca pedimos ni guardamos una dirección postal.</li>
+<li>Si rechazas la ubicación, puedes seguir leyendo todo lo que ya está en la aplicación. Lo que no puedes es levantar una figura nueva.</li>
+</ul>
+<h2>La pregunta que escribes</h2>
+<p>Tu pregunta se guarda junto con la lectura que produjo, para que tu historial pueda mostrártela de nuevo.</p>
+<p>También se envía a un tercero. Hay dos llamadas al modelo por pregunta, y ambas reciben el texto que escribiste:</p>
+<p>1. Leértela de vuelta. Un modelo de lenguaje reformula la pregunta como una pregunta de "¿ocurrirá?", la separa si trata de dos asuntos y asigna la casa astrológica. Eso es lo que te muestra la pantalla de confirmación antes de que se juzgue nada.</p>
+<p>2. Narrar el veredicto. Después de que nuestro propio motor haya juzgado la figura, un modelo de lenguaje redacta el veredicto en tu idioma. Recibe el veredicto y tu pregunta, y nada más de la carta.</p>
+<p>El proveedor es Anthropic, PBC, que trata el texto por cuenta nuestra para devolver una respuesta. Nuestro sistema también está construido para funcionar con los modelos de OpenAI; si cambiamos de proveedor, este texto se actualiza primero. A ninguno de los dos se le da un nombre, un correo electrónico ni tu ubicación.</p>
+<p>El juicio en sí no lo hace un modelo de lenguaje. Lo calcula un motor de reglas determinista a partir de la carta, y la narración se comprueba después contra el veredicto: una frase que nombre un planeta o un grado que no esté en la figura se rechaza, y la lectura se sirve sin prosa antes que con astrología inventada.</p>
+<h2>Datos de nacimiento, si los das</h2>
+<p>Tu nombre, fecha, hora y lugar de nacimiento son opcionales en toda la aplicación. Desbloquean las capas de numerología y natal, y nunca tocan un veredicto horario: ese sale de la carta levantada en el momento en que preguntaste.</p>
+<ul>
+<li>Los lugares de nacimiento se buscan en nuestro propio servidor, en un archivo que viaja con él. El lugar que escribes no se reenvía a ninguna empresa de mapas o geocodificación.</li>
+<li>Cada campo puede borrarse por separado, o todos a la vez, lo que también descarta los números calculados a partir de ellos.</li>
+</ul>
+<h2>Qué más se guarda</h2>
+<ul>
+<li>Lecturas: el veredicto, la carta desde la que se calculó, los testimonios y la narración.</li>
+<li>Los desenlaces que registras — si lo que dijo la carta ocurrió de verdad — y cualquier nota que añadas.</li>
+<li>Los avisos que envías sobre una lectura equivocada o dañina, con su nota.</li>
+<li>Tu saldo de sellos y el estado de tu suscripción.</li>
+<li>Tu idioma, para que una lectura guardada se abra en el idioma en que lees hoy.</li>
+</ul>
+<p>Si activas las notificaciones, el servidor las planifica por adelantado y guarda constancia de lo que envió, para no decir dos veces lo mismo. Las notificaciones están apagadas hasta que las enciendes.</p>
+<h2>Cuánto tiempo</h2>
+<p>Hasta que lo borres. No hay ningún proceso de caducidad y nada se archiva en otro sitio: una lectura que pediste hace dos años sigue ahí porque quizá quieras volver a abrirla.</p>
+<h2>Borrarlo todo</h2>
+<p>Menú y luego "Borrar mis datos". Borra tus preguntas, tus lecturas, los desenlaces que registraste, tus datos de nacimiento, cualquier cosa en cola para enviarte y la fila que es dueña de todo ello.</p>
+<p>También borra tu saldo pagado, y los sellos que hayas comprado se pierden. La aplicación lo dice en la pantalla de confirmación, porque un borrado que conserva calladamente la parte de pago de una cuenta no es un borrado.</p>
+<p>El servidor responde con el recuento de lo que quitó en lugar de con un acuse de recibo, para que la promesa pueda comprobarse en vez de creerse.</p>
+<p>Los datos de nacimiento por sí solos pueden borrarse sin borrar el resto, desde la pantalla de perfil.</p>
+<h2>Pagos</h2>
+<p>Los sellos y las suscripciones se compran mediante el sistema de compras dentro de la aplicación de la plataforma, es decir, App Store o Google Play. El pago lo gestiona íntegramente la plataforma. Nunca vemos ni guardamos un número de tarjeta.</p>
+<p>Lo que guardamos es el resultado: cuántos sellos tienes, si hay una suscripción activa y cuándo termina.</p>
+<h2>Ni se vende, ni se comparte</h2>
+<p>No vendemos lo que guardamos y no lo compartimos con fines publicitarios. El único tercero que recibe contenido escrito por ti es el proveedor de modelos de lenguaje nombrado arriba, y solo para responder la pregunta que hiciste.</p>
+<h2>Menores</h2>
+<p>La aplicación no está dirigida a menores, y no recogemos a sabiendas nada de un menor de 13 años.</p>
+<h2>Tus derechos</h2>
+<p>Vivas donde vivas, puedes ver lo que guardamos — esa es la pantalla de historial — y puedes borrarlo desde la aplicación sin pedírnoslo. Si tu ley local te concede más derechos sobre tus datos, escríbenos a [[CONTACT_EMAIL]].</p>
+<h2>Contacto</h2>
+<p>[[OPERATOR]] — [[CONTACT_EMAIL]]</p>
+<p>Los cambios en este texto se publican aquí, dentro de la aplicación, con la fecha de arriba.</p>
+<footer>
+  <a href="../index.html">Support</a>
+  <a href="../en/privacy.html">Privacy Policy</a>
+  <a href="../en/terms.html">Terms of Use</a>
+</footer>
+</main>
+</body>
+</html>
