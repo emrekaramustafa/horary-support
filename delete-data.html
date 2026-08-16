@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deleting your data — Horary: Ask Astro</title>
+<meta name="description" content="How to delete the data held by Horary: Ask Astro, what gets deleted, and what is kept.">
+<style>
+  :root {
+    --bg: #fbf9f4; --ink: #1c1a17; --muted: #5c574e;
+    --rule: #e2dcd0; --link: #6a4a1f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14130f; --ink: #ece7dc; --muted: #a09889;
+      --rule: #302c25; --link: #d5b483;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.65 ui-serif, Georgia, "Times New Roman", serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 40rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .35rem; }
+  .sub { color: var(--muted); margin: 0 0 2.5rem; font-size: 1rem; }
+  h2 {
+    font-size: .8rem; letter-spacing: .1em; text-transform: uppercase;
+    font-family: ui-sans-serif, system-ui, sans-serif; color: var(--muted);
+    margin: 2.75rem 0 .75rem; padding-bottom: .4rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 1rem; }
+  a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  ol, ul { padding-left: 1.35rem; }
+  li { margin: 0 0 .5rem; }
+  .steps li { margin: 0 0 .75rem; }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .9rem;
+  }
+  footer a { margin-right: 1.25rem; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Deleting your data</h1>
+  <p class="sub">Horary: Ask Astro — published by Mehmet Emre Karamustafa.</p>
+
+  <h2>How to request deletion</h2>
+  <ol class="steps">
+    <li>Open <strong>Horary: Ask Astro</strong> on your phone.</li>
+    <li>Tap the <strong>menu</strong> button in the top left corner.</li>
+    <li>Choose <strong>Delete my data</strong>.</li>
+    <li>Confirm. The deletion happens immediately and the app tells you how many
+    records were removed.</li>
+  </ol>
+  <p>No account, email address or support ticket is involved, because the app has
+  no account to begin with.</p>
+
+  <h2>What is deleted</h2>
+  <p>Everything the service holds about you, on the server and on the device:</p>
+  <ul>
+    <li>every question you asked, and the chart cast for it;</li>
+    <li>every reading, its judgement and the testimonies behind it;</li>
+    <li>outcomes you recorded, and any report you sent about a reading;</li>
+    <li>your profile — name, birth date, birth time and birth place — and
+    anything computed from it;</li>
+    <li>your daily allowance record;</li>
+    <li>the identifier your device is known by, and the user row itself;</li>
+    <li>any notification still scheduled or queued for you.</li>
+  </ul>
+
+  <h2>What is kept, and for how long</h2>
+  <p>Nothing personal is kept. There is no soft delete, no archive copy and no
+  retention period: the rows are removed when you confirm, not marked hidden.</p>
+  <p>Two things survive, and neither identifies you. Ordinary web server logs,
+  which record that a request was made, are kept for a short operational period
+  and are not joined to your data. And our database provider takes
+  encrypted backups on its own schedule, which expire on that schedule; no single
+  reader can be addressed inside them, and nothing is restored from them to bring
+  deleted rows back.</p>
+
+  <h2>If you have already uninstalled the app</h2>
+  <p>Delete your data before removing the app, if you can. The only thing that
+  identifies your records is a random identifier held on your device, so once the
+  app is gone we have no way to tell which rows were yours — and no way to
+  confirm a request is really from you. What remains is a set of rows nobody can
+  reach, tied to an identifier no device holds any more.</p>
+  <p>If you reinstall from a backup that preserves it, the identifier comes back
+  and so does the option to delete.</p>
+
+  <h2>Questions</h2>
+  <p>Write to <a href="mailto:mehmetemrekaramustafa@gmail.com">mehmetemrekaramustafa@gmail.com</a>.</p>
+
+  <footer>
+    <a href="index.html">Support</a>
+    <a href="en/privacy.html">Privacy Policy</a>
+    <a href="en/terms.html">Terms of Use</a>
+  </footer>
+
+</main>
+</body>
+</html>
